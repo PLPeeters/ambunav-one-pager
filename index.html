@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AmbuNav is the navigation app built for ambulance crews—five curated destination lists, direct ambulance bay routing, and field-ready tools on Android and iOS.">
+  <title>AmbuNav | Navigation built for ambulance crews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <nav class="nav">
+      <div class="brand">
+        <img src="assets/icon.png" alt="AmbuNav icon" class="brand-icon">
+        <div class="brand-text">
+          <span class="brand-name">AmbuNav</span>
+          <span class="brand-sub" data-i18n="brandSub">Built for ambulance crews</span>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+          <div class="nav-links">
+            <a href="#lists" data-i18n="nav.destinations">Destinations</a>
+            <a href="#features" data-i18n="nav.features">Features</a>
+            <a href="#screens" data-i18n="nav.screens">Screens</a>
+            <a class="btn nav-btn" href="#download" data-i18n="nav.cta">Get the app</a>
+          </div>
+          <div class="lang-switch" aria-label="Language selector">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="nl">NL</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </div>
+      </nav>
+
+    <header class="hero" id="top">
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Purpose-built navigation for ambulance crews</p>
+          <h1 data-i18n="hero.title">Go straight to the ambulance bay, every time.</h1>
+          <p class="lede" data-i18n="hero.lede">
+            AmbuNav keeps the essentials at your fingertips: five curated destination lists, automatic distance sorting,
+            and direct routing to the ambulance bay so you avoid circling the hospital.
+          </p>
+          <div class="store-badges">
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.plpeeters.ambunav">
+              <img class="store-img" data-store="play" src="assets/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play">
+            </a>
+            <a class="store-badge" href="https://apps.apple.com/app/ambunav/id6757754337">
+              <img class="store-img" data-store="apple" src="assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-phones">
+            <img class="hero-phone hero-phone-left" src="assets/screens/fr/hero-tnup-android.png" alt="TNUP list on Android">
+            <img class="hero-phone hero-phone-center" src="assets/screens/fr/hero-112-ios.png" alt="112-approved hospitals list on iOS">
+            <img class="hero-phone hero-phone-right" src="assets/screens/fr/hero-tnup-units-android.png" alt="TNUP units list on Android">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="lists" class="section">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="lists.eyebrow">Essential lists</p>
+          <h2 data-i18n="lists.title">Five destination lists, always sorted by proximity.</h2>
+          <p class="section-lead" data-i18n="lists.lead">112-approved hospitals, burn centers, non-urgent transport units and other useful stops—filtered instantly by name or alias.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3 data-i18n="lists.card1.title">112-approved hospitals</h3>
+            <p data-i18n="lists.card1.copy">Preloaded ambulance bay coordinates so you pull up at the right access every time.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="lists.card2.title">Burn centers</h3>
+            <p data-i18n="lists.card2.copy">Critical destinations surfaced first when seconds matter most.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="lists.card3.title">Non-urgent transport</h3>
+            <p data-i18n="lists.card3.copy">Pick the right unit for non-urgent runs and get arrival guidance like floor and route.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="lists.card4.title">Total gas stations</h3>
+            <p data-i18n="lists.card4.copy">Refuel without guesswork thanks to a dedicated, distance-sorted list.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="lists.card5.title">Other useful places</h3>
+            <p data-i18n="lists.card5.copy">All the practical stops crews need for day-to-day runs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="section muted">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="features.eyebrow">Made for the field</p>
+          <h2 data-i18n="features.title">Everything built to keep crews moving.</h2>
+          <p class="section-lead" data-i18n="features.lead">AmbuNav pairs destination intel with the tools you actually use on shift.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-title">
+              <span class="dot"></span>
+              <h3 data-i18n="features.item1.title">Direct to the ambulance bay</h3>
+            </div>
+            <p data-i18n="features.item1.copy">AmbuNav opens Maps or Waze straight to the ambulance bay instead of the public drop-off.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-title">
+              <span class="dot"></span>
+              <h3 data-i18n="features.item2.title">Unit intel for non-urgent transport</h3>
+            </div>
+            <p data-i18n="features.item2.copy">Select the destination unit to see arrival instructions, floor, and route. Brussels is most complete today—send missing data right from the app.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-title">
+              <span class="dot"></span>
+              <h3 data-i18n="features.item3.title">Address scanner</h3>
+            </div>
+            <p data-i18n="features.item3.copy">Scan faxes or mission slips and launch navigation in a tap.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-title">
+              <span class="dot"></span>
+              <h3 data-i18n="features.item4.title">Stay in control</h3>
+            </div>
+            <p data-i18n="features.item4.copy">Floating icon when minimised, manual navigation button, pull-to-refresh, and plenty of settings to tune the app to your crew's workflow.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-title">
+              <span class="dot"></span>
+              <h3 data-i18n="features.item5.title">Field wizards & calculators</h3>
+            </div>
+            <p data-i18n="features.item5.copy">NEXUS and START system wizards plus GCS/Malinas score and oxygen calculators keep critical decisions close.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="screens" class="section">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="screens.eyebrow">In-app views</p>
+          <h2 data-i18n="screens.title">Purposeful screens, zero clutter.</h2>
+          <p class="section-lead" data-i18n="screens.lead">Designed around how ambulance crews move: quick filtering, clear lists, and fast return paths.</p>
+        </div>
+        <div class="screens">
+          <div class="screen-card">
+            <img src="assets/screens/fr/112-android.png" alt="112-approved hospitals list on Android">
+            <div class="caption" data-i18n="screens.caption1">112-approved hospitals list, sorted by distance.</div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/fr/burn-centers-ios.png" alt="Burn center list on iOS">
+            <div class="caption" data-i18n="screens.caption2">Get to the nearest burn center swiftly.</div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/fr/arrival-android.png" alt="Arrival navigation on Android">
+            <div class="caption" data-i18n="screens.caption3">Arrival details, right upon arrival.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools" class="section">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="tools.eyebrow">Field tools</p>
+          <h2 data-i18n="tools.title">Built-in helpers for confident decisions.</h2>
+          <p class="section-lead" data-i18n="tools.lead">Use clinical wizards and quick scores without leaving the app.</p>
+        </div>
+        <div class="screens">
+          <div class="screen-card">
+            <img src="assets/screens/fr/gcs-android.png" alt="GCS helper on Android">
+            <div class="caption" data-i18n="tools.caption1">GCS helper at a glance.</div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/fr/malinas-android.png" alt="Malinas helper on Android">
+            <div class="caption" data-i18n="tools.caption2">Malinas score in seconds.</div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/fr/immobilisation-android.png" alt="Immobilisation wizard on Android">
+            <div class="caption" data-i18n="tools.caption3">Immobilisation wizard, step by step.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="section download">
+        <div class="download-card">
+          <div>
+            <p class="eyebrow" data-i18n="download.eyebrow">Get AmbuNav</p>
+            <h2 data-i18n="download.title">Ready when your shift starts.</h2>
+            <p class="section-lead" data-i18n="download.lead">Install AmbuNav on Android or iOS, then choose your navigation app and go.</p>
+            <div class="store-badges">
+              <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.plpeeters.ambunav">
+                <img class="store-img" data-store="play" src="assets/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play">
+              </a>
+              <a class="store-badge" href="https://apps.apple.com/app/ambunav/id6757754337">
+                <img class="store-img" data-store="apple" src="assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+              </a>
+            </div>
+          </div>
+          <div class="download-note">
+            <p><strong data-i18n="download.noteTitle">Help keep data fresh.</strong> <span data-i18n="download.noteCopy">Send missing units or corrections from the app's context menus.</span></p>
+            <p data-i18n="download.note2">Questions? Contact the AmbuNav creator directly in-app.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="brand">
+        <img src="assets/icon.png" alt="AmbuNav icon" class="brand-icon">
+        <div class="brand-text">
+          <span class="brand-name">AmbuNav</span>
+          <span class="brand-sub" data-i18n="footer.sub">Navigation for ambulance crews</span>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p class="footer-note">
+          <span data-i18n="footer.noteLine1">© 2024 AmbuNav.</span>
+        </p>
+        <a class="footer-link" data-i18n="footer.privacy" href="privacy-en.html">Privacy policy</a>
+        <p class="legal" data-i18n="footer.legalGoogle">Google Play is a trademark of Google LLC.</p>
+        <p class="legal" data-i18n="footer.legalApple">App Store is a trademark of Apple Inc.</p>
+      </div>
+    </footer>
+  </div>
+
+  <button class="back-top" type="button" aria-label="Back to top">↑</button>
+
+  <script>
+    const translations = {
+      en: {
+        metaDescription: 'AmbuNav is the navigation app built for ambulance crews—five curated destination lists, direct ambulance bay routing, and field-ready tools on Android and iOS.',
+        brandSub: 'Built for ambulance crews',
+        nav: { features: 'Features', destinations: 'Destinations', screens: 'Screens', cta: 'Get the app' },
+        hero: {
+          eyebrow: 'Purpose-built navigation for ambulance crews',
+          title: 'Go straight to the ambulance bay, every time.',
+          lede: 'AmbuNav keeps the essentials at your fingertips: five curated destination lists, automatic distance sorting, and direct routing to the ambulance bay so you avoid circling the hospital.',
+          ctaPrimary: 'Get it on Google Play',
+          ctaSecondary: 'Download on the App Store',
+          badgePlayAlt: 'Get it on Google Play',
+          badgeAppleAlt: 'Download on the App Store',
+          badge: '112 destinations pre-mapped',
+          noteTitle: 'Shortcut to the ambulance bay',
+          noteCopy: 'Skip front entrances and drive straight to the right coordinates.'
+        },
+        lists: {
+          eyebrow: 'Essential lists',
+          title: 'Five destination lists, always sorted by proximity.',
+          lead: '112-approved hospitals, burn centers, non-urgent transport units and other useful stops—filtered instantly by name or alias.',
+          card1: { title: '112-approved hospitals', copy: 'Preloaded ambulance bay coordinates so you pull up at the right access every time.' },
+          card2: { title: 'Burn centers', copy: 'Quickly head to the closest burn center.' },
+          card3: { title: 'Non-urgent transport', copy: 'Pick the right unit for non-urgent runs and get arrival guidance like floor and route.' },
+          card4: { title: 'Total gas stations', copy: 'Refuel without guesswork thanks to a dedicated, distance-sorted list.' },
+          card5: { title: 'Other useful places', copy: 'All the practical stops crews need for day-to-day runs.' }
+        },
+        features: {
+          eyebrow: 'Made for the field',
+          title: 'Everything built to keep crews moving.',
+          lead: 'AmbuNav pairs destination intel with the tools you actually use on shift.',
+          item1: { title: 'Direct to the ambulance bay', copy: 'AmbuNav opens Maps or Waze straight to the ambulance bay instead of the public drop-off.' },
+          item2: { title: 'Unit intel for non-urgent transport', copy: 'Select the destination unit to see arrival instructions, floor, and route. Brussels is most complete today—send missing data right from the app.' },
+          item3: { title: 'Address scanner', copy: 'Scan faxes or mission slips and launch navigation in a tap.' },
+          item4: { title: 'Stay in control', copy: "Floating icon when minimised, manual navigation button, pull-to-refresh, and plenty of settings to tune the app's workflow." },
+          item5: { title: 'Field wizards & calculators', copy: 'Immobilisation and START system wizards plus GCS/Malinas score and oxygen calculators keep critical decisions close.' }
+        },
+        screens: {
+          eyebrow: 'In-app views',
+          title: 'Purposeful screens, zero clutter.',
+          lead: 'Designed around how ambulance crews move: quick filtering, clear lists, and fast return paths.',
+          caption1: '112-approved hospitals list, sorted by distance.',
+          caption2: 'Get to the nearest burn center swiftly.',
+          caption3: 'Arrival details, right upon arrival.'
+        },
+        tools: {
+          eyebrow: 'Field tools',
+          title: 'Built-in helpers for confident decisions.',
+          lead: 'Use clinical wizards and quick scores without leaving the app.',
+          caption1: 'GCS helper at a glance.',
+          caption2: 'Malinas score in seconds.',
+          caption3: 'Immobilisation wizard, step by step.'
+        },
+        download: {
+          eyebrow: 'Get AmbuNav',
+          title: 'Ready when your shift starts.',
+          lead: 'Install AmbuNav on Android or iOS, then choose your navigation app and go.',
+          play: 'Open Google Play',
+          appStore: 'Open App Store',
+          noteTitle: 'Help keep data fresh.',
+          noteCopy: "Send missing units or corrections from the app's context menus.",
+          note2: 'Questions? Contact the AmbuNav creator directly in-app.',
+          legal: 'Google Play is a trademark of Google LLC.',
+          legalApple: 'App Store is a trademark of Apple Inc.'
+        },
+        footer: {
+          sub: 'Navigation for ambulance crews',
+          noteLine1: '© 2024 AmbuNav.',
+          privacy: 'Privacy policy',
+          legalGoogle: 'Google Play is a trademark of Google LLC.',
+          legalApple: 'App Store is a trademark of Apple Inc.'
+        }
+      },
+      fr: {
+        metaDescription: "AmbuNav est l'app de navigation conçue pour les équipes ambulancières : cinq listes de destinations, tri automatique par distance et itinéraire direct vers le sas ambulance sur Android et iOS.",
+        brandSub: 'Conçue pour les équipes ambulancières',
+        nav: { features: 'Fonctionnalités', destinations: 'Destinations', screens: 'Écrans', cta: "Télécharger l'app" },
+        hero: {
+          eyebrow: 'Navigation pensée pour les équipes ambulancières',
+          title: 'Rejoignez le sas ambulance du premier coup.',
+          lede: "AmbuNav garde l'essentiel à portée de main : cinq listes de destinations, tri automatique par distance et itinéraire direct vers le sas ambulance pour éviter de tourner autour de l'hôpital.",
+          ctaPrimary: 'Disponible sur Google Play',
+          ctaSecondary: "Disponible sur l'App Store",
+          badgePlayAlt: 'Disponible sur Google Play',
+          badgeAppleAlt: "Disponible sur l'App Store",
+          badge: '112 destinations pré-cartographiées',
+          noteTitle: 'Raccourci vers le sas ambulance',
+          noteCopy: "Évitez l'entrée publique et arrivez directement aux bonnes coordonnées."
+        },
+        lists: {
+          eyebrow: 'Listes essentielles',
+          title: 'Cinq listes de destinations, toujours triées par proximité.',
+          lead: "Hôpitaux agréés 112, centres de brûlés, transport non-urgent et autres points utiles—filtrables instantanément par nom ou alias.",
+          card1: { title: 'Hôpitaux agréés 112', copy: 'Coordonnées du sas ambulance préenregistrées pour arriver directement au bon accès.' },
+          card2: { title: 'Centres de brûlés', copy: 'Rejoignez rapidement le centre de brûlés le plus proche.' },
+          card3: { title: 'Transport non-urgent', copy: 'Choisissez le bon service pour le non-urgent et obtenez les indications d\'arrivée (itinéraire, étage...).' },
+          card4: { title: 'Stations Total', copy: 'Ravitaillez sans tâtonner grâce à une liste dédiée et triée par distance.' },
+          card5: { title: 'Autres lieux utiles', copy: 'Tous les arrêts pratiques pour les trajets du quotidien.' }
+        },
+        features: {
+          eyebrow: 'Pensé pour le terrain',
+          title: 'Tout est conçu pour garder l\'équipe en mouvement.',
+          lead: 'AmbuNav associe les infos destination aux outils que vous utilisez réellement en intervention.',
+          item1: { title: 'Directement vers le sas ambulance', copy: "AmbuNav ouvre Maps ou Waze sur le sas ambulance plutôt que sur l'entrée publique." },
+          item2: { title: 'Infos service pour le transport non-urgent', copy: 'Sélectionnez le service de destination pour voir les instructions, l\'étage et le trajet. Bruxelles est la plus complète—envoyez les données manquantes depuis l\'app.' },
+          item3: { title: "Scanner d'adresses", copy: 'Scannez vos fax ou bons de mission et lancez la navigation en un geste.' },
+          item4: { title: 'Gardez la main', copy: "Icône flottante quand l'app est minimisée, bouton de navigation manuelle, pull-to-refresh et réglages pour adapter le flux de votre équipe." },
+          item5: { title: 'Assistants et calculateurs terrain', copy: "Assistants d'immobilisation et START, calculateurs de scores GCS/Malinas et calcul d'oxygène pour garder les décisions critiques sous la main." }
+        },
+        screens: {
+          eyebrow: 'Vues in-app',
+          title: 'Des écrans utiles, sans encombrement.',
+          lead: "Pensé pour la façon dont les équipes ambulancières bougent : filtres rapides, listes claires et retours express.",
+          caption1: 'Liste des hôpitaux agréés 112 triée par distance.',
+          caption2: 'Rejoignez le centre de brûlés le plus proche rapidement.',
+          caption3: "Détails d'arrivée, dès votre arrivée."
+        },
+        tools: {
+          eyebrow: 'Outils terrain',
+          title: 'Des aides intégrées pour décider vite et bien.',
+          lead: "Utilisez des assistants cliniques et des scores rapides sans quitter l'app.",
+          caption1: "Assistant GCS en un coup d’œil.",
+          caption2: 'Score de Malinas en quelques secondes.',
+          caption3: "Assistant d’immobilisation, étape par étape."
+        },
+        download: {
+          eyebrow: 'Télécharger AmbuNav',
+          title: 'Prêt dès le début de votre garde.',
+          lead: "Installez AmbuNav sur Android ou iOS, choisissez votre app de navigation et partez.",
+          play: 'Ouvrir Google Play',
+          appStore: "Ouvrir l'App Store",
+          noteTitle: 'Aidez à garder les données à jour.',
+          noteCopy: "Envoyez les services manquants ou corrections via les menus contextuels de l'app.",
+          note2: "Des questions ? Contactez le créateur d'AmbuNav directement dans l'app.",
+          legal: 'Google Play est une marque de Google LLC.',
+          legalApple: "App Store est une marque d'Apple Inc."
+        },
+        footer: {
+          sub: "Navigation pour les équipes ambulancières",
+          noteLine1: '© 2024 AmbuNav.',
+          privacy: 'Politique de confidentialité',
+          legalGoogle: 'Google Play est une marque de Google LLC.',
+          legalApple: "App Store est une marque d'Apple Inc."
+        }
+      },
+      nl: {
+        metaDescription: 'AmbuNav is de navigatie-app op maat voor ambulanceteams: vijf gecureerde lijsten, directe route naar de ambulancesas en veldklare tools op Android en iOS.',
+        brandSub: 'Gemaakt voor ambulanceteams',
+        nav: { features: 'Functies', destinations: 'Bestemmingen', screens: 'Screens', cta: 'Download de app' },
+        hero: {
+          eyebrow: 'Navigatie op maat voor ambulanceteams',
+          title: 'Rijd meteen naar de ambulancesas, elke keer.',
+          lede: 'AmbuNav brengt het essentiële binnen handbereik: vijf gecureerde bestemmingslijsten, automatische sortering op afstand en een directe route naar de ambulancesas zodat je niet hoeft te zoeken.',
+          ctaPrimary: 'Download op Google Play',
+          ctaSecondary: 'Download in de App Store',
+          badgePlayAlt: 'Download op Google Play',
+          badgeAppleAlt: 'Download in de App Store',
+          badge: '112 bestemmingen vooraf ingetekend',
+          noteTitle: 'Snelle route naar de ambulancesas',
+          noteCopy: 'Sla de hoofdingang over en rij direct naar de juiste coördinaten.'
+        },
+        lists: {
+          eyebrow: 'Essentiële lijsten',
+          title: 'Vijf lijsten, altijd op afstand gesorteerd.',
+          lead: '112-erkende ziekenhuizen, brandwondencentra, niet-dringend vervoer en andere nuttige plekken—direct te filteren op naam of alias.',
+          card1: { title: '112-erkende ziekenhuizen', copy: 'Vooraf ingestelde coördinaten van de ambulancesas, zodat je meteen op de juiste plek bent.' },
+          card2: { title: 'Brandwondencentra', copy: 'Ga snel naar het dichtstbijzijnde brandwondencentrum.' },
+          card3: { title: 'Niet-dringend vervoer', copy: 'Kies de juiste dienst voor niet-dringende ritten en krijg aanwijzingen bij aankomst, zoals route en verdieping.' },
+          card4: { title: 'Total tankstations', copy: 'Tanken zonder omwegen dankzij een speciale, op afstand gesorteerde lijst.' },
+          card5: { title: 'Andere nuttige plaatsen', copy: 'Alle praktische stops die je dagelijks nodig hebt.' }
+        },
+        features: {
+          eyebrow: 'Gemaakt voor het werkveld',
+          title: 'Alles om de ploeg in beweging te houden.',
+          lead: 'AmbuNav koppelt bestemmingsinfo aan de tools die je echt gebruikt tijdens de shift.',
+          item1: { title: 'Rechtstreeks naar de ambulancesas', copy: 'AmbuNav opent Maps of Waze direct naar de ambulancesas in plaats van de publieksingang.' },
+          item2: { title: 'Info per dienst voor niet-dringend transport', copy: 'Kies de bestemmingsdienst om instructies, verdieping en route te zien. Brussel is het meest compleet—stuur ontbrekende data vanuit de app.' },
+          item3: { title: 'Adres-scanner', copy: 'Scan faxen of ritbonnen en start de navigatie met één tik.' },
+          item4: { title: 'Hou de controle', copy: 'Zwevende knop wanneer geminimaliseerd, handmatige navigatieknop, pull-to-refresh en veel instellingen om de workflow te finetunen.' },
+          item5: { title: 'Wizards en calculators voor het veld', copy: 'Immobilisatie- en START-wizards plus GCS/Malinas-score en zuurstofcalculators houden kritieke beslissingen binnen handbereik.' }
+        },
+        screens: {
+          eyebrow: 'In-app weergaven',
+          title: 'Doelgerichte schermen, zonder ballast.',
+          lead: 'Gebouwd voor hoe ambulanceteams werken: snel filteren, duidelijke lijsten en snel terugkeren.',
+          caption1: '112-erkende ziekenhuizenlijst gesorteerd op afstand.',
+          caption2: 'Ga snel naar het dichtstbijzijnde brandwondencentrum.',
+          caption3: 'Aankomstdetails, meteen bij aankomst.'
+        },
+        tools: {
+          eyebrow: 'Tools voor het veld',
+          title: 'Ingebouwde helpers voor snelle, consistente beslissingen.',
+          lead: 'Gebruik klinische wizards en snelle scores zonder de app te verlaten.',
+          caption1: 'GCS-helper in één oogopslag.',
+          caption2: 'Malinas-score in seconden.',
+          caption3: 'Immobilisatiewizard, stap voor stap.'
+        },
+        download: {
+          eyebrow: 'Download AmbuNav',
+          title: 'Klaar bij de start van je shift.',
+          lead: 'Installeer AmbuNav op Android of iOS, kies je navigatie-app en vertrek.',
+          play: 'Open Google Play',
+          appStore: 'Open App Store',
+          noteTitle: 'Help de data up-to-date te houden.',
+          noteCopy: 'Stuur ontbrekende diensten of correcties via de contextmenu\'s in de app.',
+          note2: 'Vragen? Contacteer de maker van AmbuNav rechtstreeks in de app.',
+          legal: 'Google Play is een handelsmerk van Google LLC.',
+          legalApple: 'App Store is een handelsmerk van Apple Inc.'
+        },
+        footer: {
+          sub: 'Navigatie voor ambulanceteams',
+          noteLine1: '© 2024 AmbuNav.',
+          privacy: 'Privacybeleid',
+          legalGoogle: 'Google Play is een handelsmerk van Google LLC.',
+          legalApple: 'App Store is een handelsmerk van Apple Inc.'
+        }
+      }
+    };
+
+    const badgeSrc = {
+      en: {
+        play: 'assets/GetItOnGooglePlay_Badge_Web_color_English.svg',
+        apple: 'assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg'
+      },
+      fr: {
+        play: 'assets/GetItOnGooglePlay_Badge_Web_color_French.svg',
+        apple: 'assets/Download_on_the_App_Store_Badge_FR_RGB_blk_100517.svg'
+      },
+      nl: {
+        play: 'assets/GetItOnGooglePlay_Badge_Web_color_Dutch.svg',
+        apple: 'assets/Download_on_the_App_Store_Badge_NL_RGB_blk_100317.svg'
+      }
+    };
+
+    const setLang = (lang) => {
+      const meta = document.querySelector('meta[name="description"]');
+      const activeLang = translations[lang] ? lang : 'en';
+      const t = translations[activeLang];
+      if (meta && t.metaDescription) meta.setAttribute('content', t.metaDescription);
+      document.documentElement.lang = activeLang;
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const keyPath = el.dataset.i18n.split('.');
+        let value = t;
+        keyPath.forEach((k) => { if (value) value = value[k]; });
+        if (typeof value === 'string') {
+          el.textContent = value;
+        }
+      });
+      document.querySelectorAll('.lang-btn').forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.lang === activeLang);
+      });
+      document.querySelectorAll('.store-img').forEach((img) => {
+        const store = img.dataset.store;
+        if (badgeSrc[activeLang] && badgeSrc[activeLang][store]) {
+          img.src = badgeSrc[activeLang][store];
+        }
+        if (t.hero && store === 'play' && t.hero.badgePlayAlt) img.alt = t.hero.badgePlayAlt;
+        if (t.hero && store === 'apple' && t.hero.badgeAppleAlt) img.alt = t.hero.badgeAppleAlt;
+      });
+      const privacyLink = document.querySelector('.footer-link');
+      if (privacyLink) {
+        const privacyHref = {
+          en: 'privacy-en.html',
+          fr: 'privacy-fr.html',
+          nl: 'privacy-nl.html'
+        };
+        privacyLink.href = privacyHref[activeLang] || privacyHref.en;
+      }
+      localStorage.setItem('ambuLang', activeLang);
+    };
+
+    document.querySelectorAll('.lang-btn').forEach((btn) => {
+      btn.addEventListener('click', () => setLang(btn.dataset.lang));
+    });
+
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+
+    const saved = localStorage.getItem('ambuLang');
+    setLang(saved && translations[saved] ? saved : 'en');
+
+    const backTop = document.querySelector('.back-top');
+    const onScroll = () => {
+      if (window.innerWidth <= 720) {
+        backTop.classList.toggle('show', window.scrollY > 80);
+      } else {
+        backTop.classList.remove('show');
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    onScroll();
+  </script>
+</body>
+</html>
