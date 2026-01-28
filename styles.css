@@ -298,6 +298,45 @@ a {
   display: block;
 }
 
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.store-badge-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.store-badge.disabled {
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.store-badge-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.store-badge-overlay span {
+  font-size: clamp(9px, 1.4vw, 14px);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #d62828;
+  transform: rotate(-20deg);
+  white-space: nowrap;
+}
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
