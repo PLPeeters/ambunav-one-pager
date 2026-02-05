@@ -686,6 +686,10 @@ a {
     padding: 18px 16px 48px;
   }
 
+  .store-badges {
+    justify-content: center;
+  }
+
   .screens {
     grid-template-columns: 1fr;
   }
